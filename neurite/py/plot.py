@@ -3,7 +3,7 @@ plot utilities for the neuron project
 
 If you use this code, please cite the first paper this was built for:
 Dalca AV, Guttag J, Sabuncu MR
-Anatomical Priors in Convolutional Networks for Unsupervised Biomedical Segmentation, 
+Anatomical Priors in Convolutional Networks for Unsupervised Biomedical Segmentation,
 CVPR 2018
 
 Contact: adalca [at] csail [dot] mit [dot] edu
@@ -146,7 +146,7 @@ def volume3D(vols, slice_nos=None, data_squeeze=True, **kwargs):
 
     Parameters:
         vols: a 3d volume or list of 3d volumes
-        slice_nos (optional): a list of 3 elements of the slice numbers for each axis, 
+        slice_nos (optional): a list of 3 elements of the slice numbers for each axis,
             or list of lists of 3 elements. if None, the middle slices will be used.
         data_squeeze: remove singleton dimensions before plotting
     """
@@ -298,7 +298,7 @@ def flow(slices_in,           # the 2D slices
 
         # show figure
         ax.quiver(u, v,
-                  color=colormap(norm(colors).flatten()),
+                  #color=colormap(norm(colors).flatten()),
                   angles='xy',
                   units='xy',
                   width=quiver_width,
